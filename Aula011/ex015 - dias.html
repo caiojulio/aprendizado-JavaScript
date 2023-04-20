@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Hoje é:</title>
+
+    <style>
+        body{
+            background: cadetblue;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="dia"></div>
+
+    <script>
+        var diaSistema = new Date().getDay()
+        var dia = document.getElementById('dia')
+        
+        switch(diaSistema){
+            case 0:
+                dia.innerHTML = 'HOJE É DOMINGO'
+                break
+            case 1:
+                dia.innerHTML = 'HOJE É SEGUNDA-FEIRA'
+                break
+            case 2:
+                dia.innerHTML = 'HOJE É TERÇA-FEIRA'
+                break
+            case 3:
+                dia.innerHTML = 'HOJE É QUARTA-FEIRA'
+                break
+            case 4:
+                dia.innerHTML = 'HOJE É QUINTA-FEIRA'
+                break
+            case 5:
+                dia.innerHTML = 'HOJE É SEXTA-FEIRA'
+                break
+            case 6:
+                dia.innerHTML = 'HOJE É SABADO'
+                break
+            default:
+                dia.innerHTML = 'o que que é bardou?'
+                break
+        }
+
+    </script>
+</body>
+</html>

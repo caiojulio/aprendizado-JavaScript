@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleIdade.css">
+    <title>Idade e Sexo</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section id="sec">
+
+        <div id="caixaAno">
+            Ano de Nascimento: <input type="number" name="" id="anosNascimento"> 
+        </div>
+
+        <div id="caixaSexo">
+            
+            Sexo: <input type="radio" value="masculino" name="radSex" id="masc">Masculino <input type="radio" value="feminino" name="radSex" id="fem" checked>Feminino
+
+            <div id="botao">
+                <input type="button" value="Verificar" name="botaoVerificar" id="verificar" onclick="verificar()">
+            </div>    
+
+            <div id="res">
+                Preencha os dados acima para ver o resultado!
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; Caio Julio Santos da Silva</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

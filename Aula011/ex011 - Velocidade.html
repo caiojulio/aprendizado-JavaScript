@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocidade</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+
+    <input type="number" name="vel" id="vel">
+    <input type="button" value='verificar 'name="botao" id="botao">
+
+    <div id="info"></div>
+
+    <script>
+        var verifica = document.getElementById('botao')
+        verifica.addEventListener('click', velocidade)
+
+        function velocidade(){
+
+            var velocidade = document.getElementById('vel').value 
+            velocidade = Number(velocidade)
+            var resposta = document.getElementById('info')
+            
+            if (velocidade > 60){
+                resposta.innerText = 'VOCÊ ULTRAPASSOU O LIMITE DE VELOCIDADE'
+            } else {
+                resposta.innerText = 'VELOCIDADE ACEITA'
+            }
+
+        }
+
+
+    </script>
+</body>
+</html>

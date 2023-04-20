@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex007 - Somando Numeros</title>
+</head>
+<body>
+    <input type="number" name="textn1" id="textn1">
+    <input type="number" name="textn2" id="textn2">
+    <input type="button" value="somar" onclick="somar()">
+
+    <div class="resultado" id="res">
+        RESULTADO 
+    </div>
+
+    <script>
+
+        function somar(){
+
+            var n1 = Number(document.getElementById('textn1').value)
+            var n2 = Number(document.getElementById('textn2').value)
+            var soma = n1 + n2
+            var res = document.getElementById('res')
+
+            res.innerText = `O RESULTADO DA SOMA DE ${n1} e ${n2} é: ${soma}`
+
+        }
+
+    </script>
+</body>
+</html>

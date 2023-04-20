@@ -1,0 +1,55 @@
+body{
+    background: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17pt;
+    color: white;
+}
+
+header{
+    text-align: center;
+}
+
+section{
+    margin:auto;
+    border-radius: 30px;
+    background: whitesmoke;
+    width: 600px;
+    margin-top: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.483);
+    color: black;
+}
+
+div#info{
+    padding: 10px;
+    margin-left: 10px;
+}
+
+div#numIns{
+    margin-left: 30px;
+    padding: 10px;
+    margin-top: -40px;
+}
+
+div#botaoFinalizar{
+
+    
+    margin-left: 25px;
+    padding: 15px;
+    margin-top: -20px;
+    
+
+}
+
+footer{
+    text-align: center;
+    color: white;
+}
+
+div#res{
+    padding: 15px;
+    margin-left: 30px;
+}
+
+select#selectNum{
+    width: 150px;
+}

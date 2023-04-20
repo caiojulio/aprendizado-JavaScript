@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleNumeros.css">
+    <title>Numeros</title>0
+</head>
+<body>
+    <header>
+        <h1>Analisando Numeros</h1>
+    </header>
+
+    <section id="sec">
+
+        <div id="info">
+            
+            <p>Numeros(entre 1 e 100): <input type="number" name="form_numero" id="form_numero"> <input type="button" value="Adicionar" name="botaoAdc" id="botaoAdc" onclick="validaNum()"></p>
+
+        </div>
+
+        <div id="numIns">
+
+            <select name="selectNum" id="selectNum" size="10">
+            </select>
+
+        </div>
+
+        <div id="botaoFinalizar">
+
+            <input type="button" value="Finalizar" name="botaoFinal" id="botaoFinal" onclick="finalize()">
+
+        </div>
+
+        <div id="res">
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; Caio Julio Santos da Silva</p>
+    </footer>
+
+    <script src="scriptNumeros.js"></script>
+</body>
+</html>
